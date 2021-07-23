@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function get_nominal_value(number){
+            let penultimate = getPenultimateNumber(number);
+            if(penultimate==1) {
+                return "рублей";
+            }
+            else{
+                let last = getLastNumber(number);
+            switch(last){
+                case 0:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                    return "рублей";
+                case 1:
+                    return "рубль";
+                case 2:
+                case 3:
+                case 4:
+                    return "рубля";
+
+            }
+            }
+            
+        }
+
+        function getPenultimateNumber(number) {
+            number = String(number);
+            let string_length = number.length();
+            let p = number.charAt(string_length - 2);
+            if (p!= ""){
+                return Number(p);
+            }
+            return null;
+        }
+
+        function getLastNumber(number){
+            number = String(number);
+            let string_length = number.length();
+            let l = number.charAt(string_length - 1);
+            return Number(l)
+        }
+
+        let amount_of_money = parseInt(prompt("Введите сумму, котрую вы хотите положить на счет: "));
+        alert('Ваша сумма в ' + amount_of_money + '  ' + get_nominal_value(amount_of_money) + ' успешно зачислена.');
+    </script>
+</body>
+</html>
