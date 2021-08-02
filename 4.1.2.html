@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function Post(author, text, date){
+            this.author = author
+            this.text = text
+            this.date = date
+        }
+
+        Post.prototype.edit = function(){
+            this.text = "Piece and war";
+        }
+
+        //добавила еще один метод для вывода, чтобы посмотреть, работает ли метод edit()
+        Post.prototype.show = function() {
+            alert("Author: " + this.author + " Name: " + this.text + " Date of publishing: " + this.date);
+        }
+
+
+        function AttachedPost(author, text, date, highlighted){
+            Post.call(this, author);
+            Post.call(this, text);
+            Post.call(this, date);
+            this.highlighted = "false";
+        }
+
+        
+        AttachedPost.prototype = Object.create(Post.prototype);
+        AttachedPost.prototype.constructor = AttachedPost;
+
+        AttachedPost.prototype.makeTextHighlighted = function(){
+            this.highlighted = "true";
+        }
+
+
+        let obj1 = new Post("Lev Tolstoy", "Anna Karenina", "24/04");
+        obj1.show();
+        obj1.edit();
+        obj1.show();
+
+        let obj2 = new AttachedPost("Lev Tolstoy", "Anna Karenina", "24/04", "false");
+        obj2.edit();
+        obj2.show();
+        obj2.makeTextHighlighted();
+
+
+
+
+
+
+
+
+        class Post {
+            constructor(author, text, date){
+            this.author = author;
+            this.text = text;
+            this.date = date;
+            }
+
+            edit() {
+                this.text = "Piece and war";
+            }
+
+            show() {
+                alert("Author: " + this.author + " Name: " + this.text + " Date of publishing: " + this.date);
+            }
+        }
+
+        class AttachedPost extends Post {
+            constructor(author, text, date, highlighted) {
+                super(author);
+                super(text);
+                super(date);
+                this.highlighted = "false";
+            }
+
+            makeTextHighlighted(){
+                this.highlighted = "true";
+            }
+        }
+        let obj1 = new Post("Lev Tolstoy", "Anna Karenina", "24/04");
+        obj1.show();
+        obj1.edit();
+        obj1.show(); //посмотрим на изменения
+
+        let obj2 = new AttachedPost("Lev Tolstoy", "Anna Karenina", "24/04", "false");
+        obj1.show();
+        obj1.edit();
+        obj1.show(); //посмотрим на изменения
+        obj2.makeTextHighlighted();
+    </script>
+</body>
+</html>
