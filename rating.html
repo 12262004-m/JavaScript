@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GiCEu8zepnXj3hmTd9CZYZhkcvwH6nfdeAE9K7SWbrNXkaptVdrfYHU8b3YsUpiDCwUnkIShl8gIQcxhkbmrG1-MRvW7f_I3dF0rkBlWI52-PRYCrntRpa_iEEnvkYa3Mo2pttDqviaKe-b-Y8LHUtLqQUcI6O3DxlEMxGEwJ8juJaae0jxpCDf3uIvsYNlRdMQi-Vny8f1BcYcwerq-EzUcf-ciLsE7d0gWhCGXZORV4iEB6bloXadTGu1nNCliBQFCKX3TWT-b9jmF9DPLY1lgxHyP6VoPIqgLeLmWIC6taDT1ot0fr6InmdhT-GegmUfTO8sfz9fdk_FrneQ-lIGR-VYCLDYweo817zl5fr78HwY9Zpmm9GD2VdPAWXBU_EaF9MQxjWCGHiflMMK3lA-wVxTXbHd85cmyNWJUChj3wI845Q3n-rmImLGZ_u4CZXMlpcXMag7-nVUL_Lh5u5-so9XW9THMqBXNopTjU8lLjZJjsX9Ksw2wzfZX987L7HDFl9PfoZi_5I9BlT52aJzuzScsQXe1bM8cV5l_grw8Iu9P_GDAfvJdFwh1O4k2oLS0r9vCNpt_lEWIUFBUeh_OlkMpNhssB8jUs8Z81Ty8b1Hpdj2FUoCYPWUvr7OoosemSx_ZQjMsLxpBgGf3MHity5FbeozgzIYINVH0QcEyarWKB7sdNYlCnBTY7oP1Adc466nQzp2v0MdOmfchiiVkNJlkS3OviRXTwn05tSHHniLV_yZMbPBI4zB1M59n35goE675-WmAjgq1tYKGcCEHKN_F06Swq9GaQnvvGbzmrpgv3OXekO-cCez2vAGdo6e-vjIUCjehYofNg8qO6o5UE6Sez5ei9pzX6oSJfUqLYVB2xy3c1ZKmOocdCqgN_TgD29WZiBtm5oB5I09Dx2PO8wK7twQfeod7VrptDwN5SYQJlZaxlLt0f5Iwni08C7-oZmMeASUkDeHyZzmBpGYnxXMQN_c-_dhtdeXjV3BFQ_qMYZgIf-QButtgpDPZEQJhO4OhD0mFYA2nWeQOBiFX9M6A76-ulPWQbFJjINrG8Pb9ZOKAFPIyuSCUvWVNngcBmhgCYO8SA5LYLPcuNfSZUkC2GomZcRYcXdJ1SC0iOOI1dKiYO6SkilzjEA5tx8aqGsK-cbtBKXu5PsADLTfTzP7cGkGdEXmULyaplCODZpj05ym85pUFvIdwNx1MW1RVl9qMCIxaACjW0jW48M5WPHOqwsThavirBhjicuXFJN74QUmzDjb-OKmwLB2Q63puiJWn1qXkuqyfH8-A7giq1NRut0bkgDIw14cRO2QTi-NH-0tDZBaYJQ69Aaz8tjx5thAidu-zcr7xbVu_ZSZeSqIQK1r6vhONWF18xbQsGlFKHacCNtT622I3D-DPUCoLZvWj0piLEBFWJz1UWF2mkSUa0Q5C4lu0m0EJzy78HjOZW9d57XF0wVYEjsnnTCFL6XzkziYza_UoBJ822ZdrpIZtmRcHsqex_Up4a--WyPskR4-r7nrT3FMcPHkwluw-m8iyiTnnxBImBcgCuhG0MH8l94dsUWrnZJs2_tGdCTfCNiRgdSvfjt6f8hPl02ldGU0VsG4Ncz49lgaBlOAaYsyWN67fftI3I4Rli6XlQ9CqX9vLKbncC7A8MgZS" charset="UTF-8"></script><style>
+        i {
+            font-size: 50px;
+        }
+        .golden {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <i id="first" class="fas fa-star"></i>
+    <i id="second" class="fas fa-star"></i>
+    <i id="third" class="fas fa-star"></i>
+    <i id="fourth" class="fas fa-star"></i>
+    <i id="fifth" class="fas fa-star"></i>
+
+    <!-- Задание. Используя заготовку, сделайте чтобы при наведении на вторую звезду
+    подсвечивались первая и вторая звезды. При наведени на третью звезду подсвечивались
+    первая, вторая и третья звезды, и т.д. 
+    mouseover - это событие срабатывает когда мы наводим на элемент.
+    mouseout - это событие срабатывает когда мы перестаем наводить на элемент.
+	Вы можете пойти более продвинутым путем, и получать предыдущий элемент 
+	например с помощью https://mzl.la/3a4SPlR
+    -->
+
+    <script>
+        /* Первый вариант
+        'use strict';
+        let firstStar = document.getElementById('first');
+        let secondStar = document.getElementById('second');
+        let thirdStar = document.getElementById('third');
+        let fourthStar = document.getElementById('fourth');
+        let fifthStar = document.getElementById('fifth');
+
+        let goldenClass = 'golden';
+
+        firstStar.addEventListener('mouseover', function() {
+            if (!firstStar.classList.contains('goldenClass')) {
+                firstStar.classList.add(goldenClass);
+            }
+        });
+
+        firstStar.addEventListener('mouseout', function() {
+            firstStar.classList.remove(goldenClass);
+        });
+
+
+
+        secondStar.addEventListener('mouseover', function() {
+            if (!secondStar.classList.contains('goldenClass')) {
+                firstStar.classList.add(goldenClass);
+                secondStar.classList.add(goldenClass);
+            }
+        });
+
+        secondStar.addEventListener('mouseout', function() {
+            firstStar.classList.remove(goldenClass);
+            secondStar.classList.remove(goldenClass);
+        });
+        
+
+
+        thirdStar.addEventListener('mouseover', function() {
+            if (!thirdStar.classList.contains('goldenClass')) {
+                firstStar.classList.add(goldenClass);
+                secondStar.classList.add(goldenClass);
+                thirdStar.classList.add(goldenClass);
+            }
+        });
+
+        thirdStar.addEventListener('mouseout', function() {
+            firstStar.classList.remove(goldenClass);
+            secondStar.classList.remove(goldenClass);
+            thirdStar.classList.remove(goldenClass);
+        });
+
+
+
+        fourthStar.addEventListener('mouseover', function() {
+            if (!fourthStar.classList.contains('goldenClass')) {
+                firstStar.classList.add(goldenClass);
+                secondStar.classList.add(goldenClass);
+                thirdStar.classList.add(goldenClass);
+                fourthStar.classList.add(goldenClass);
+            }
+        });
+
+        fourthStar.addEventListener('mouseout', function() {
+            firstStar.classList.remove(goldenClass);
+            secondStar.classList.remove(goldenClass);
+            thirdStar.classList.remove(goldenClass);
+            fourthStar.classList.remove(goldenClass);
+        });
+
+        fifthStar.addEventListener('mouseover', function() {
+            if (!fifthStar.classList.contains('goldenClass')) {
+                firstStar.classList.add(goldenClass);
+                secondStar.classList.add(goldenClass);
+                thirdStar.classList.add(goldenClass);
+                fourthStar.classList.add(goldenClass);
+                fifthStar.classList.add(goldenClass);
+            }
+        });
+
+        fifthStar.addEventListener('mouseout', function() {
+            firstStar.classList.remove(goldenClass);
+            secondStar.classList.remove(goldenClass);
+            thirdStar.classList.remove(goldenClass);
+            fourthStar.classList.remove(goldenClass);
+            fifthStar.classList.remove(goldenClass);
+        });*/
+
+
+        ///второй вариант
+        'use strict';
+        let obj = document.querySelectorAll('i');
+        obj.forEach(function(i) {
+            i.addEventListener('mouseover', function(event) {
+                goldAdding(event.target);
+            });
+            i.addEventListener('mouseout', function(event) {
+                goldRemoving(event.target);
+            });
+        })
+
+        
+        function goldAdding(i) {
+            i.classList.add('golden');
+            let prElem = i.previousElementSibling;
+            if (prElem !== null && prElem.tagName === 'I') {
+                return goldAdding(prElem);
+            }
+        }
+
+        function goldRemoving(i) {
+            i.classList.remove('golden');
+            let prElem = i.previousElementSibling;
+            if (prElem !== null && prElem.tagName === 'I') {
+                return goldRemoving(prElem);
+            }
+        }
+    
+    
+    </script>
+</body>
+</html>

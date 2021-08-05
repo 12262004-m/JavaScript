@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_7aP2rC3jpgrhVnmQcFyjR6PHnU1Ght5-IFOTEVP9JX0oRQ0uaJtsgXNqEcabbB35mLemPgpupIlQyeDXYFctev4yh0WLFj1Lu1W5jGyatXBkiptDJK-aYeVGB9ekT1OWpFRNok0xxiifJ8xHChDJDEC_5pllrSTo9yAHG-99RuMTba0L5osgAeiOE0sRGHJTUAyRyGgPN7FKrO6V3bAopShMZKm9XnTG4-8xNxQ-raiwcyiKa8W6Lu4BCO09EeErU3lHs1zh9gpi1cKhF-WgXmL7cExOk0KcLpuhtv4bSxJstpncH4g03IU6x1E3aIAJGFAxJZJd1XHJ8a9OAz2jvGsrmYIMUzoH6GgZfwB9qgBN7zPuMvtmf1EgclwrPp1ehjTP8UuepIJUb4AIAanpazs0CPDMKuXefRZOVrKTxU4xlzuEP2Fnhro_VxxXHkm8_Yj2swug8jca2zlKRxEUa9rTqSz9OUsgroTWkY-y3-VhGkt1BewpblVRC3yTRWAsE6N8QjXP9x_jFfOHUgvr6tuz1KzAg8vtMY4C4WnUwPRRaI_jNZ-2-5_JMfgnVTaIK7LUMp4ibkk5x0CoCxSx1G10xIA58CuJlFbwJH7j7Uw7uPjUzJE2dtFfieRcqLv49MeZA_0JTwrRtJhU5wZ3uXEFLtbeDmlXSoOfXlBzVfBnSujwY6CCkNfqUmXxIDeYfcEe67n-D7qpiFUnKFbLZVfxHwR1qW088yyM1wLRXhAtk_38P4fOa9XTC1xHQnYEveJKLFVgPSnHKJC73adoxClc_km4L-QIu23FixMNikIIpUW7fedFcmZ1CmRpzfBo62XQRtR5X8mitgwKGIFm4eJaDql49Jtxfue6q6_6SbyqY7baGLrMLfKPchA4YEG1VZXRKDkIfaRbWjt9FKAVASbJJvgcWgPZqYkPfrKbLNMvyA8dP4ZHOV_KMvd9mFAyzpVMikSQ6OBqgZveCoqFy321hRg72glHIzlOcIXOqwEDK2phPHN4NzEKTl0vYoRwIs3srzAbj1MLHrvrqyVnWoEd6Ddv4Gdqwwufe2htOIQOL2_3t-l7iD1PlxAjJib3Lu6IZ9V9OsJxNC7AcUvZUPTeQfXGlrjQOjQYUyGCsRPntD7FzFCRMmUxgGGyBHYSRLlzTBMqp57X0o3gJhq0_ZvTCjX51vCNvSTsce9ojXmy8VDv_CN0ni3yySnP9Kd5WvcJ5s2c5TfcxU9sZiYgrL2C57SGl4s5eLwD089UXlcns0rV7CgfX4e0BPLX1xYpKdxbe9jEH6mwFEUPCbDBrfVs8Bw55vXncvFmusXD7iJXckWMXOWtS-sgVzywZ-hY8JOVRrQUemqC-_XZtvjTb0HFFSGeNIZpM0ENwdCndIIldG2hOPrwCzirucRtsWI6FCNapv1HbJLjqwX8eKw-xSfatMpIJ1PwjmNSrz2ZfQMSDSUMPc54Icmd7n3m8-5jjz4CwXCK7CqGcx6ejwSCpPAwo9QTwfjLuGBd1AC46Jg9S2_IgDTsYgtnbgJkyY0FU2SwAngQ3fOZ1XY_Tbo0VyXoGnDr6KIhYsoMO9auW4Uyh0ftDUMnCxQXtcKaWe0qFWdBozQG3w7lruyiJs1nblYE3oQzTvzrXySh5Zqkbuz1OeF8M8xhfVZBPXioLgF7RgM4-vTEie_0tUah15ed-Ee0IDSfds6fQpHe1oapCXXClLDwk9Tk4u63avQLb3Y" charset="UTF-8"></script><style>
+        input {
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id="first" type="text"><br>
+        <br>
+        <input id="second" type="text"><br>
+        <br>
+        <button>Отправить</button>
+    </form>
+
+    <!-- 
+        Задание. Вам нужно проверять пусто ли в input'ах при отправке формы.
+        Если в инпуте пусто делаете ему красную рамку. Если хотя бы в одном
+        инпуте пусто форма не должна отправляться.
+        1. сохраните в переменную formEl ссылку на форму
+        2. сохраните в переменную ссылку на input#first
+        3. сохраните в переменную ссылку на input#second
+        4. на formEl назначьте обработку события отправки формы (submit),
+        у функции-обработчика объявите параметр event.
+            4.1 в функции-обработчике вы проверяете пусты ли input'ы, для этого
+            читайте у них свойство value
+            4.2 если input пустой тогда вы обращаетесь к его style.borderColor
+            и делаете его равным red
+            4.3 чтобы остановить отправку формы используйте event.preventDefault()
+     -->
+
+    <script>
+         'use strict';
+         let formEl = document.querySelector("form");
+         let firstInput = document.getElementById("first");
+         let secondInput = document.getElementById("second");
+         formEl.addEventListener("submit", function(event){
+             if (firstInput.value === ""){
+                 firstInput.style.borderColor = "red";
+             }
+             if (secondInput.value === ""){
+                 secondInput.style.borderColor = "red";
+             }
+
+             if(firstInput.value === "" || secondInput.value === ""){
+                event.preventDefault();
+             }
+         })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=qJ6ChWFygy54C_fD7cb1El_zy2UD78k9o-GcK4_DSWFHIwBlS9q4jomWDDnaA7F61JRZnBH4Y0QK2G1K9RJywM3C0_eaKAhpEMtfGIQYIA_w9FqGmt-bxFI-gs7TVhfPOSdOmuJ2oZLh44qDsPsV5sQokLnRB9hDnb0pUWWu8ORtQqRVynW5bihx6zM-pmO0-Qdy0GllNdILgVeaw1N0ibUah5VmMeBOA47KRP88sdJZ7pUDXbzkx33NJNL4-6Dw7tnhhm3QvzePBMXPSCOOwQdTFDHY9--E8DTohKJtFa066W9Yvpqs93ab_eE2LmnJGnFabGr4PP9-dFm60NVaCQHVEm-B72aTeRm5a-gSu9SgToksKUkrh4CTIhz6NGz2fhLt9oJC1-aF6mDpm9zUiPrZ9nUZjtwb6W7tlnVhWI1Di3HNwWlCIhbhPOf_dqqplNnhjERn4_s-qzi-W9Y22XAaY5tQ_OZZurFJ8QLAsVOraw8MVvcm6-fuKQ35za20Ci8RuWm0Ba5u7Bhm5S5LhG_gpWsnJBnYrK_bvSFksKdxsK_8QNIVGpLDIeVVFIJ9O2AvPKaoaQlncojp94TijW_NvyExGFz5rwFjiSOTTL7cn90h_3UgoQcXBqC_6lFy8BmLnGTTQvVfcFZMWNLRee-5_DN4B5pCElqXs_KUzFPXIUkGpUQlXQDe_W8nxsoGHjfifhkVxZunXm20VBUYtFSK3x1mtZzZnUFdqOHrNDrvE8Gp0-DHOnEkk4yyLdWj5zRILKYZdmytMrO17Go90OhAWuNCbTjkAuIq4KG9KVS_enBmaDFvJNB2BkUn0fwavfUXBCmw4XEvqIXQA6pRM2moMi0lVXFjJOBO0YkrXyx3jgNNfPwaqbaJe607LxyTk6BjnrWOeCqefoXPzxumtHXZNWD6oquQKFNBr0gYk5914_Wy04e9Nn2Vv5H4MSAB096Gc2c5LS_8RlyxtSFs5b4EUiOGsj_Xw9WdgAXEXI-GLrLaOrISuoGuQljw1F2WrPgXJW9ioTHX9HcVJfYPZciUItQXmN5pWTfklEFVOvN14Zr-rUIHKlr6d0BRW0HMzloFMtsH2Al0Vsd1vwNBAgB816OcJYo8nCkXHiAJ4juOE-FxvqU9XZYXsEzQ2JV1FLH7F27-0iBYyhQ_FyQl65Xe3ktni4MUK8_NTXxDIFzbs70XAwpZmT2TlXa3L2jUCCGQ87ucgBiMjlRh033vLovF03gNauwOTYbi6tq16mMWiuLzbGeDxbfq3y3Lb4Rwsi5wqOkywLDiVBkELwF3mEt5cP6ouV-Nk1guoHMpeTZX7C2M8ejFD7lqCSf7tWSiaELVAHzo1ycQw_rzrkC1vEfCRAVdYqd0LuRWh6tHamcN-USat3nUj9nNoIkOgpdEqV4MOz6T4rtJ7xdMTGbB6Zaz_CF_AqPc-dTGS3qNfqeggsuavcfJpPrj3I5na1Z7B0qOXEB5Q5qYbGk_2Wv36MFPG17ozf23x8ftXsIRroGV-nn3yudF7lUer1oB07YtsW9UX6TkATF5iutVgUQq6yqW8ic5x46edMvdcuDEHTGchhqJVn0A4zqAUThRYqhxAiu27tBPyaXG79QM-PvKP9bY4ujDVaJlKdsnJi4MvpfXPVZ19vnfjN4aKHW5zlRj" charset="UTF-8"></script></head>
+<body>
+    <button>Показать блок</button>
+    <div class="message">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <!-- Задание.
+    1. Сохраните в переменную btn ссылку на кнопку.
+    2. Сохраните в переменную msg ссылку на .message.
+    3. На btn назначьте обработку клика.
+        3.1 Внутри функции-обработчика сделайте чтобы у msg display становился block.
+        3.2 Для msg с помощью classList.add() добавьте классы animate__animated и
+        animate__fadeInLeftBig
+    -->
+
+    <script>
+        'use strict';
+        let btn = document.querySelector('button');
+        let msg = document.querySelector('.message');
+        btn.addEventListener('click', function() {
+            msg.style.display = 'block';
+            msg.classList.add('animate__animated', 'animate__fadeInLeftBig');
+        });
+    
+    </script>
+</body>
+</html>

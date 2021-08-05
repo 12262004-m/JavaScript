@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RNxX2CemnXo75oh1_ca854oD5j0RjhjO7QJRUNgGZeV443bxUuPz0GgBOx7dmotCqzPyyRZSwoIDoxWbWTyifnqF75Q3_i_omXZkzotXWMapHa01v3cgdzrkn_R54SCXqZqKkb08wqwpOS2Ciuz0BQH2fd3AONHuefCN_3fQFCACWh1O-BAOHvIeVNDu6oGg8gdB9CxGm2YJxe_yk07wLanJXwYLFaYf8n6ybvY8FNklPi4yLlL7n6nu8jcT-Rz2tZ4-HEmmTq-24w5DEFkccigF4eFSrEgHIP-KQ4rB5_FZzgDlUcrDy8bTk_53l4ZUzMubaufr3QVwR_56rx7qO3Q_b9H_afkkEW2-SzGI02rgshgK-lK5HuHUqYzoOIN0dEa1Nbu3PYO56CJ3Uxwc3S8WH5z6MIiQXbN69DVSMfv5dk4nTg9lTYZgXsOP2bEpNvlQscS7WuE9Z0rTnmXlGS_VF0CYXSbK9B8uuSFtat-lR9GhyODEO2wUPmiOgDz-v2HcKTGGIJ7sPoGnrR5VVDkCUiFr8_8HBLbcfuQz83gHoz7Ic3d7YGtNuY5wGK7qa93GI2HfjRv712cU--lm3c89CRBRiIrGdzyap8npfcZoPmGe1n_PH-kE4k19uGqiUSh3LicnVFX22L1SdTD9Xa2Eqjn8L3D4YzP13WHvT3muys0TFigTtZw7W665Q9-XXgcWYIzRhf86QoDh3B-2MHMMM92iKrRfM9DD2PFiaynT-ue38BkPmfpozj6FzWDi_6JVfJO3Avs3N5WMNFlI2f-HgarMD68i0_NGf4bEDDPA1rPIh7RIcLjls4FGdAfANs90yBbNZfemNLBVFW9M8In_5r9Y-tjRYxoZWeNumuBru0aeurI9Z4QBoIW3HJ912MdLeY2zZ3XEwXjJYDYHqi3yALwGtVkYSPxG9v4KF2kpPebtjv3RjN2gNNsVoPNjE55B0epiVTQWEMwNNYUUw0lEZqMwuy2eqZL_QBAMdYQK4pQcV_BHrSKLXsMLayNj1gxbUUtMklzDV8viqIYLS8685S7MSeUq0zwXXwdzKPvUZxw9lPU37g3eTQBBa4aX2QiNxu87Wkar84GbBWejBQXOKZDHeLfmnF1cF7KiAWeyXaS9i5oV4p_8pwRNDi2WwIuJQ1MwD2x869mPKJBU2eq6CbxhEe5g9Gm9-Y2kZpeGlWDWE0sr4SjIPn1jKC7sLu0t_lMvzyM7HDDh66WWzPzYioCpdZ33zhjC1rwQHP5_ucfhQWj9cZVTf8bDvEQW--odrEQmfnblSI7GCmbhYxIMHqpuyHNd1ubbKLlTdgKT6LpDJ-627lqt0gMg5XILcpHkFz1LTowdUORxgOivwfVEtVxtPlcgxNzbP3QTnh3Ff-YsLjtAMBkAk9e3LocnWDBipt_4AVvbZL8YrXVYmcgnaha1ZA94Nyvk1V2JgCZcic6CvkyM2V28BbUAxpdK7He-nhYZOYqYCdMOgCrYSRVGRE7Hmz1n82K7vpP9dgQmvI4u4iC4XSj13cGjwAIMdfUR-j5C2Uwzv4yVddCANM2wJF1VzO-iIvb421Zxr072gZFW7g4yr21VjB29GDbWZDCe1IPS9t6pLVCJQ9C0BIi1ilTr4V9wJFxEzlZAZnaTp8H5SslJGDmsPXr6ceAm20rpLEnL7gHvEacdZKsASnK0ArEnWc12nJZ-aPiz3JLCKK3C2YJTRPC3IlTe8Row7aeD00mTBOwoxJYlQfeX0aoeMFXfZQ1VL_o8zKajKUqT1d05bvlQO3N5qBS_bGOS76MPyKxUAW22haDwAfH6JxH8ogZjL1pW5mCku4PghcA" charset="UTF-8"></script></head>
+
+<body>
+    <form action="">
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="text"><br>
+    </form>
+
+    <!-- 
+        Задание. Сделайте, чтобы у всех инпутов снизу был внешний отступ (margin-bottom).
+        1. Получите все инпуты, например с помощью querySelectorAll
+        2. Переберите полученную коллекцию например с помощью forEach
+            2.1 У функции-обработчика, которая будет передаваться в forEach определите
+            параметр input
+            2.2 Чтобы менять стили обращайтесь к свойству style у параметра input
+    -->
+
+    <script>
+        'use strict';
+        let obj = document.querySelectorAll("input");
+        obj.forEach(function(input){
+            input.style.marginBottom = "10px";
+        });
+    </script>
+</body>
+
+</html>
