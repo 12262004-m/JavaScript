@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0cdaukrlByTkeB0J-hoDEpYQxouuIMCxA2E22ZJ0TB7Cu_IvSZXgYIJa4pXBZvAZpeKI-M-EPaLGqgRfErOkRoRMhZdKkvt09ml9ZE8VqP6I-HMZXOFawqkrBZ0ocZ6GwvCees2fYb8rnSMZxnIYDn8G2LE2HpK98hG6akzVoFB4dXLs4Qi82LhviFqTJN1h5TKrbQFzh_ZYN1_fMb8SnKerADwxAg88LyG01QTC5BQQYiq-gpB2FewIFJ86hF77zs6cx09Csu8-zV9X_Pt2xOSHuF3bUBKCIzuKLv4XMIhAmh5z7gtc4Q_7ylWnCvp4032G8AIC3ySDMjnJqR1RQYDIL-tloaqlH9GsbUFDVda_3zYMdD3ZAUQDOJfqDpmJioPYxMH1c-rFHn_uEdGEL_Ow6K06LAHMHx8mAzWl1xcIHn6NxtZ5NVsMvpa75yzZZkUx9wH9lj6UKYkF7GcGj3ZpSgZMkIlppEG08vMNN6P_i3GHbUD2lM9SXaHnVmabUOt28UDdcgdu6_Y9YBn1N5uyhFgknfuUXbT2InMoHUGKICqzDfRVy012IqA9CoSjwOcFz2SdeL9lm7c6X5NYhMY_dl9KkPLyZzTl1zMd42BrGTe7kg-7yC28R9jeWuFN7Fw6FV_GhT6Ci4ikGVoZq0Kzp-M8W3F0hEFtyGMYcuqVvTIb7NPIdzoViKaR8Eh7Iw6Ir7NkfmeFG0up5XBenfOd5DTaj2XoGrbwtZZYpNkfDEg_wsnNJMPtEFSe-GDDlz0kPkPmKno_xcU-uTJyW_GLeFtOqlYq4x2701lNpzr7e9-9-Qt4d3sr-302PPrfDcFaiJqbVT4qf8dGyKolAKiAumA_oFEUBmljW2GdQByjdLYtA6ddTpkRfjruP4uDh2tsXDcIr_OLi1zXSS4w1ALbw5COQvcUlURvHEksjeAVuCeMSZC3sSaIsbbyKnTg9_kR3P2XMaeyUjjSQqfkfSDZbPjjfynnEXCf441NEBvv6oUZpGAoTENzO_Hz6PU7MW8y1Osiv_itKQs9ip35cdJe-oGKAiL0CdQ0Y1Tq_dpzICVUYmRtnC47an8UO2d_cUTP691vB41bNS1NsiiMQTOkqzkZctPJEskfxqJ1aNoVUGNnem2VuvGnHtaND5y8GCjZxr2tiCfEfsO_CawuSHUfB63KLu0SAvnmWcFWsF6fFwugnSxQvUQobp-XzgALx6q5nADXbG9sDEmOul0OueTe9Sgr-AUoEEeGAr4_uU0cOEoJETqD-6ChSN6ncAd7nPJjIKeDG6Icy02GIttng4dnpBMSMYPG9Abmb3C45-kYz2kT4vJ8XDWSSkeh6VTwyYrPqQuOylr_yA62MNdikTQDM_peepSoZbzMs8CVt0Qd9J3wbTwyYUveSTlO6JbSldvpfW2T90tJl6UQJN48KiMznmNcVuRRanMaMpZhSwzoSGb8LZsODqZf61IV57y0nA9ywj-erHWVXL5rUeFCvYVeG_30wX3JEQbbZBG0MkhWr72md1bN1t4szCESieUeZrYMJLQjglTLOqXzvSadtBO-fdl1EShXOg1rZgZsOC1N7-yE-NSyvhOzDmCuunp42A0hteU24JUpGcUBc_VIn1ld2QdEVhQnMbq7iP9pmBKmhejRXpJFDXN5inEu3qfRIgJR0dIMgafXAFEQH71HpC4Jlt7eL6dxmZkvi73CrFSAReE2ICtZtw4cgdsix4sdCxAPbB8iywbs046hS9biZQ" charset="UTF-8"></script></head>
+<body>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/1.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/2.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div>Товар 1</div>
+        <img src="images/3.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+
+    <!-- Задание. Нужно чтобы при клике по кнопке, блок .product, в котором она
+    находится становился цвета (имеется в виду background) lightgreen, а текст на 
+	кнопке стал "Добавлено", для этого:
+    1. Найдите все кнопки, например с помощью querySelectorAll
+    2. Переберите полученную коллекцию кнопок, например с помощью forEach,
+    и каждой кнопке назначьте в качестве обработчика клика фукнцию
+    buttonClickHandler (увидите ее ниже в коде)
+    3. Когда функция buttonClickHandler будет срабатывать вы из объекта
+    события получаете элемент на котором произошло событие (свойство target),
+    затем получаете родителя кнопки по коротой кликнули (свойство parentNode),
+    затем обращаетесь к свойству style, а затем к свойству background и
+    ставите цвет lightgreen.
+    3.1 Также во время срабатывания функции buttonClickHandler из обекта
+    события (параметр event) вы получаете кнопку на которой произошло
+    событие (свойство target) и меняете у нее текст на "Добавлено".
+    -->
+
+    <script>
+         'use strict';
+         let btn = document.querySelectorAll("button");
+         btn.forEach(function(elem){
+             elem.addEventListener("click", buttonClickHandler)
+         });
+
+		
+		function buttonClickHandler(event) {
+            event.target.parentNode.style.background = "lightgreen";
+            event.target.textContent = "Добавлено";
+		}
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZA1WAXSqNfq4nEPgUIo2_ocK0JQJIVbFBK_7u358cUM0IdQnc49gqIKdGzoc7wfu0AqtpCN9AYjGftiSbYklxZFr0cKicIOT97UVfHjhDNmszLxPLEG2mD9JzpIpBA0LRAV1b5rVAJ5kJ7CeP9erkAKy35RGY7rszt51y88ZPsUZ0X6TBE-HV_loKSwtHKRjEUj0YtbjW1KE17N5vSmRZxv8P8_W2WIkB5uTBaKA4wxQwJGCixV0-Xd1GCdhe091nZV54h6Fdwq3_1OPizvhVICrBWptPB-3_Nd-H6QeChLBnYOfUfaFaRnJSxHvNUXEWBcbJkfXGk5dBbF4N2QW9QLUTF2_MEOwcSOsSCwewbHJ0Vl0UaWOU5KrZzehWxeFT6Lxymy2qhPJ-TUPZAzmaEFKX3TCN1QHItwhrK9JCWss0WL-qoSIkr861-HGDpwpoag6N2jCmZLktlCOvvL_pmebWlr7WUzrvoxLcQN4Ll4x09Vb5Ar-myRB0vWCBCDTiKLb4ckUCfGeN9sh9qDS9GtCnx0EYgn0wvuN70KeQI0yjUxSR8g5YqPLBfbC71IySZRM42Nt14Do9kwJm-pNc_T2hZcwO2SBcEkWJHpm5mk7q-C-8m3Ur-uX__03L17FqcTInlYtKJZ81igt1tvV67kAf4eWpy39xyF3XmBLVcyO1N7ad_5ENZKvioPKnBy5laoNGohv2nqdIpW6iwPlumrbbcXAid49ZX9BD8n5M1PLyaxnQzq0WxE8q-EbRihrS0CzlLor05vpKi4_ak_9H5VljGaU1V8opRG98D4EsXCw3IHXHIcuoBIHq1HwCUUJfh3uj-a6TFvKmvdcTCg752XYYSX7gOsDXZrKhcFvxGUwW5HFr0nlOUOLDq16lPFggmF1UlQt5I3Nu-9-KsPv9WJQjrNZMNhtkKh-eOd9GsPTtjfNf2DytSo6HuAa7Gm6jubZpYxFWf9wvN35oxQBEEDWAHExpUpvH-xJSNhoVb3n-FK9_COHoUuhKb0ygdIYmpiIJoJRfns04vqYeKRcfh_N9_laErC5TDwqlndwb7PANRhkeq3JKR-gqQmrrKBQlfBBdX7mZMALgB3rNh2dHNpstoHfmb1fkuljoCy1tGTRNqyd_M20ZffnPJeeFu0zBWsAqE7DhwDcTtzlxPNiSVt_DXvvsGF59tir5-GX4kUQuh2R5J0Vt80Mprb0fkijWMd8HoXxr1qOOg_y3sTbc19UDvP_cibnGHAqDtE2mwfy5H2MWdRP53dgq4Drz1CINF4GXlvbSN1T-Bv-zQ52GbLqVbpuLO7zNrwHrG_qAtxkd3oLU-YV7ORUEgTO_FxL2uNXrTTUzHn48L9KbKAV_AD8gX6tEpHCvSAcVmiYEUhssx1TUAd6ObFScny_qPcOeGisgE9vppTxwj6JY9QIFhDVlcv3B65sizcOuf5S3X6szvDI2d5db8Qt1i0tZ5HfLFNwCKjIXJSw3twbC4C4VFL2Hqt4-PsAk9wz8MkWeRy3SfXHGftlJpwx8TtCthk6wakSnsLpxdOq2seQVrcr-0jhc3ZFBXyKWvZoBO7PVFOtU54PpNU8X1DVKk2GlGRl6ICb5SngCdoW-ddanr98VcGo8MOfNj_I8LaUzOoyGBnUYtgKkoPaWWDgJp11UeTKpmcBvgk3mBTHYqqn3czcJnBcGISOucQlwVPZXBfAoAtliVcBEr3dOa_J1En2Zp3UKuwY3HAYicrZxOovQuy5k9wjwenyHGCrzo2DA-s7hwk" charset="UTF-8"></script></head>
+<body>
+    <input id="from" type="text">
+    В инпуте написано: <span></span>
+
+    <!-- Задание.
+    1. Сохраните в переменную ссылку на span, например с помощью querySelector.
+    2. Сохраните в переменную fromEl ссылку на input, например с помощью getElementById.
+    3. Элементу fromEl назначьте обработку события change, у функции обработчика
+    этого события должен быть параметр event.
+    4. Читайте что было написано в input'e с помощью event.target.value и пишите это
+    значение в span.
+    -->
+
+    <script>
+        'use strict';
+        let span = document.querySelector("span");
+        let fromEl = document.getElementById("from");
+        fromEl.addEventListener("change", function(event){
+            span.textContent = event.target.value;
+        });    
+    </script>
+</body>
+</html>
