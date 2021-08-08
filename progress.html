@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style (2).css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8tHmqIBm0U4jiR3rrrvO5xriMuMgXN3qntuujEna1tyTVZPYdEKkisuDMuS-4Wm65JJDJ75laptFdnEFGqjG7F1shAot77AigdFrgDdwA9_qvP7Is-Y397h_LM5hkECKmtlHdcrJawePg0NeQYY1o5AybExF1Xp4SopF5pJme3iUFTYx55QV1GJ28vDvN92PUA50GqFrp20bkx6TCddOXmUIF9_73ssqgKdGQ8Fx_jJhMvIwhd6r-ZiD74VkJiqS_ZuN42lep48JRwBHh5DmUaeIej32p3e53gKbUcIUUjHz6A_D8uf3dd4i5_pUmtCfwzWX_6lnFSapa3gkLWs_Y_Vr3HmBYOr0m4PYGINu9sO8ESsgptMiaoKkkY7iu_5YAGWFLGiw6mFw9BOnUAePz0yZ9mCYPcsH9oKdQNdbc-FuYEXJ7NumzlHg8ZXc4u8kystnl_6Anmy7ahp8PZFBfD6Mx-2T2w9M9vj5nsJoZPKpxYPZzWOZK9HyRSO7qu0DoIt6AnCIKUOF3utts_zz9xiUmLRmzcJXSctkIsIzKfwksygPeg9xqhKys8l-7UJqp0ijjASpYcPWm_xTdqIdxufZhu51vPvda7Yijnx8ZmgnDRq_sYNTXll8Yqv6uPBJDk6jCkkNKmR8lDkPxlwsHWslCbXoOOejy3eMLdTxPdbIWCYtVSXgIh9-W48YXyDkqSXtHMSNQFL4BSY-ZTNQLorOZ5Fuyo4n0cwPl8UDbo4adgxzcECyd1iEVRRLJQt0v4HzQfbIgVGrlai0wsaAAtE5cD7mRl8B5MGjZ7BH07ikeXJd7zu3_LIRT0OJnwl3l6qXrPqC-pHjO-j2FCykLeFZ8L_23dPawg5NzEqwLT_huqc5tS-ERey3XK9Tp5Sv_qZ4kn_Zr8MhL0zlv5EMsmu5CJYpU2Mrm_kxXXEv9BmzLMHzk3574kvxPdRUUgj-UH52dC4mjdi6gmDALRzZaFcuhSzQbaMXspZyBONchWMVUfVCkX2jzl6nnjjtEazCTN1D-1nnNAI8GkfaBEU6NC9lgeZGcRJZuVz8ucQvGNy-P54YYTQ3EWq3At2H7Cx6aKtivvgjVdtvXlwcncBFeV35JflhvO5zaiKOzsP0UmiJNJw2V09CDZYPlmjThT8OfXpMVAoTBeGrIYASpiUaxNjVu6GqQySNw_EI2ouJUGlzGxNpZhtH_plG6-pKdS258Rez1ZyvQVNMHlsrgOUyIFlrG9MNqimINDKoXq6WF4MSkKdyGnNmFRQRIE27AwrPioqXAJOl6Xj-0LInzSSouD9j2LSy-FGVJpYdIKLW2krcee5jcBi5M4nWOBjbcTSjwUQM-Z0RICzDR5C7iIodI3PEVvtG44I7vP5F90CpnjcXnbX9vhE6reFJ6n49O2egcghTyIGFlVnvWmMbakKqYjBTdCn-i05wiCwJJep_6fqCnd1UuJihmdJCND31dMlaEBKlklyiKLksJZpbNgtg3zEgVB-AkFmSqCQATWy_nYfrJ1WLR7apkARHej64yNFQDMepNeJ8MS6sADt3DnF8BFU_kyPVvM1QSRbRVvBkcYZo_spey868O_OM28AFPgry-oFvIY6SNJnjzLUxhtxHuaA4cHqMpzzCYWMlohVGloU" charset="UTF-8"></script></head>
+
+<body>
+    <div></div>
+
+    <!-- 
+    Задание.
+    Нужно имитировать заполнение прогресс-бара в div.
+    -->
+
+    <script>
+        let div = document.querySelector('div');
+
+        /**
+         * @param {number} percent величина процента от 0 до 100.
+         */
+        function changeProgress(percent) {
+            div.style.background = `linear-gradient(90deg, rgba(38,255,162,1) ${percent}%, rgba(255,255,255,1) ${percent}%)`;
+        }
+
+        /* 
+        Вам нужно в цикле for создать отложенные вызовы с помощью setTimeout. Т.е. в цикле должны
+        быть вызовы функции setTimeout.
+        1. В условии цикла должно быть i <= 100, т.к. именно значение счетчика будем
+        передавать в changeProgress, а там процент не может превышать 100.
+        2. В setTimeout вторым параметром надо передавать задержку, используйте счетчик цикла,
+        можете также добавить какой-нибудь коэффициент, чтобы подобрать желаемую скорость
+        заполнения прогресс-бара.
+        */
+       for(let i = 0;i<=100;i++){
+        setTimeout(function(){
+            changeProgress(i)
+        }, i*30)
+       }
+        
+
+    </script>
+</body>
+
+</html>

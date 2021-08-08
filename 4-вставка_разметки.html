@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mHiAuMP0KGAaoAGNI9MHj-s6SpeGFIkeGEgfBAGLGYx2igaQTuWr1lnvlRN37ayH4_sHtBa5z08GGhyx1MyIjqhYpVsPHzBsydI0nw3lzuanFOOqoTDh49rS8lhidqLF6QBjZ1X-UXHUrjDgLcbzITr6ET94MGI5hMTjIliw68Y7ENO3n2xq8WsRsLjMMrGVV7edSkGYD6xmEDMIfcVR0ZJmUyIACctwjojQAsgWoUoNR4ch3ZdKv-f4-69jQ2pRrwGw-IFafcJMSgZFxi7OcKnaQAzWL_gGDud8Fc4NP2qRnxBTRNU9kRwM7Au98HXZkfG_o1k9y0Gum7gKIhouINRet37kpWmK82h8IWl-9vr_aDhNCgJGIUJHNSiCANVXFs1EnwKOxOZspBpJhlyn31K4jE2FK7LxSGDD4uEZ14sl9xswUZ7PHEy8X12SEvAcwLn9iTnWwr_Y_tSzowR7j_KyCMGFe5niwVoVlIoH71LXQGZ8U9Tom_WyRGDlL5kD-OdUNVrF9nbc8yU4fK1laZm6EWGmqq6XCeB3dreJgnHNLTuJL1Shbbwdq_r71ZHJVjPq9hpk_GO4mDk53Yg0YT-0hULyHTOgv7-Dy3d6Jj_FrYeI9m4H9uSCkYC0AOozBtHpXxC2gQnpbbRffZ5YWphm60OGjmWyDvxfEdVfDIaktfnQcm_DiD0aee1Hv7dx85Dfg9sjbg50pFo9djk0J7rTdSYsDvmSL8EtkOOKTLqOqSHaoxt2pgCmDdjvm_pJIGD6iuxBR-4BwYosfL6H2xkLJFEoF8uqeaTjg-R7HTrNTf-bWHCoATpe8fl3nQNnZg7uullu0H4mnixYj5BoHZGrZcOqqNNP143_reBEKln3ra0Bj6eTHQsU660g5l4wpU1F7PpfrTyDJ1CHx4_mBmJALSRDgf3eVje4kQvStdEAVbVifqSnrHTrUTD-bnyoeqecp2LviIJ-K9iqRzhc--WQVUcWcMdrK-pyziBNp23fG-Zfv3yvkhZUv58ko84L8Q04SXeycclcLAQw5fIQXWSUort-Qny5w1gZMFUssmhibhaeuI97EhXZf1YZ7Bx7UV-MqWdXNy7rJfjens9kdLgdV5P4hEhBG7C0TAXgl85TYTyJfiAmyOTn14DYbYIdaq0-pwrpL9AQ9gFcG0mk6iSKyUMJt1diK2e-VkAkxLBepnV14CbOihZkipnc-lM3JZmV27I3r3-2I0qx1pVyc0lk7PUqFx3vEOXgHZ6dY5QpsYbC9uWWbkjZ6xo4HitehzbZyJ8TsWujzIDrXXPzvFlYlljfd3BgAgzmM_pLg1cJdnojBRy0T3hsggPMoi2Fv9waWGcXxKOtyttsoF39gRx498pzZtevPM-RwVyQsqlqd8ogeHp2BU9CB504Z8VIg_vgoHdOfmIrcoLIl3jlcZatzfjh-H5NO-J0yE_Djf-KpZme9KORh737YWoY9h-y-Gkd0yaSsb3UjOL5pGbuzqQAotlFQJ2SOrXCLxjVYbIBESgwjwormKl28YxralRhzWUd94HYsrWPx_Ikv6obMFcmFz90eN0K-a1_6Y9FJEb3kxbB2ExAkhzoThGscEmsabtD4B-GjR-iX8M0gT2SGf2Uc13cuE0KrispA9lJiPA5qtIOTa7xoW6rl8EcCmzRpu57tWkwCLbBkf0o1RsgmQZDVnRUzRtxlAVphHV4-Une53Un6S1biOXqIaJQVr5XDVkbDxvMgjZFjWgZbTtSSqHPecV4kolIS2tJZ66y3hQ" charset="UTF-8"></script></head>
+<body>
+    <!-- <a href="https://picsum.photos/200/300" target="_blank">ссылка</a> -->
+
+    <!-- 
+    Задание.
+    С помощью insertAdjacentHTML добавьте в body ссылку по примеру из комментария выше.
+    При создании разметки используйте шаблонный литерал. Данные для ссылки ниже.
+    -->
+
+    <script>
+        'use strict';
+        let url = "https://picsum.photos/200/300";
+        let targetAttr = "_blank";
+        let linkText = "ссылка";
+        let obj = document.querySelector("body");
+        obj.insertAdjacentHTML("afterbegin", "<a href=" + url + " target=" + targetAttr + ">" + linkText + "</a>")
+
+    </script>
+</body>
+</html>

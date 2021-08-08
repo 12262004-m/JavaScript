@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=iE6cgRheMP8jNhzlvhJU1AA0OJNefpVYjWXQ9S--5rFv9Fk2QTQMYD18TccCuRrawamhMlknwvegRkunY7GYc4yrt3etGy3yLUTwX7D4NhOWpEnI7eWzDXWNeyQXw0mpBUlASd2y3mxiJDWok2sTcSebA4qesJ262b38Aca7g9U4sA-fmb2xXxIeNzh7siPkUEOKCDAofNUZiTxwtO3CAryUwncGF0AkDtd-HA3u0GWbE6U7jd2_Rxc0AI2fhfkovMQY2oxknGdq3ePMyjHAvGUQRP0BvAU8XIrAJVqr7n7q4WIl0LHs3ZTcPbXsyojNN6ShianxApHETYrqJbI0n21kv4QxNZ5RV9rJOg-ANTABXMj4F6hVZvuYZdKy0YOcNG6u-qYd-5jq-eFTpGMVN_JF7gtV0G1DDz5afhpAQw0SivGUKRqxxEM4U4Ru3TNMlVc6Oue0HTLDTfGgimIC78EO8P6ejdG91GoqmjiqmQJhzCa6z_zyukwbiJ9Thz4bnu-_BHDp4HISLv2WQ8eGceydDgO7dJQauIlTAmk4-4JpCsRCe8N1bjbGAKibL1MB5vqNn5MyvCdXBmbt90t-InMd5gUBc2IlN7Mic8F5tELiSxkdj2IDEjAqwIRlnCi9bHJ6TKo1hOl8LkqvMb1jaDZbl5cgagUD2vD8UyNuiQWC2SMMhO4JD0srQhdV1FGcAogTkHx7VQr8U1ASeG89W4xFzxXF3ZqUBoiCnpxJxNOpPVN0LYkrhT1MSccdjsfAtilszT7mecypqIXWfz81GnajLtR__CarArwInsSS7y92zYg98GQ-59tYlroJgYc7qjXskeK0u_ZIQVf1lvp8nJ1IHYsORNlignfklEku1E1G-UMkvKna4etMEYeBCVz_elyWdeZgINFwJkxLR5KLcVK7om_q4_6zljL40-ifIqsYU2AkhbheNEwpXc886z1qrv-yHgFXJlxkEN5lqIPu31Le3LrDvMPqT9VBW7GfwzIhI_RxFaVwYZGy7Pzj8mpJIKVk6QaWfLtb85ETf7QzFXcbh99oXlieh7XG8tOWrPOZUMlk8ldYP2S2VkD3VPEtKDJ8SNX0hiq6Oh7ipM0pGvkkrGWwmLs7_9c-yU-8OWLnOvDAKl6tpowONY_w6Ooit1ZX9c_DH4oM5KrMPwE5XSSh9btEeMe7fJ6OoNk003mjJGjMZzL5OGCxklh8LbtxzfoyRe4yztlJdZWtecG146fLPs4rZJ2LVtzxLEM2V9pj45yiyM2DKCZ1-4RvjE4azAnWc8s336KX62i-HtejdQ2XWYIBFD1DQMG-se3RkGjmw8NpkCRIKU-3fMokOkKnjkQopbiZ2COTipAC2v16zb5e48XHaRkjKgzdFfWHjQ8qh05AvdzaAfLE2I7vTJQ_Mhz_mZvwTtyzKAE5cmV9RkrH4MfVNHfYpAKStRahV8o0z0aYMwD1IKlxxbMiOBRCwMwaQRDj5YWqU7myPjn9bfo19e-vaosCLHVxxNI5FF0xg4NWaFtlBhZ100AY-8feS2GXz0k3q1apbOiEArYlqOBF8q0zRNcJLCB3FWu2F5dt5io2taS5Ej43kehFOqIjj1GrOrg6fTYsnBkS0bmu7ewcdFfqFxLzkCy29ND4pyzJdzL_ZxQfC6QNV1hKbSnkGhAkoKyMN650hKZzp8t0edwh1C0QLr-fptlxdCX8HQf4P_YdmYab7l3B6LEpLTGYlhHZhlhijFym_VTAsNzRx55KjkuJ_XAHLLpGMn9vqYI47GjqVsgygGqRRayoEIIX" charset="UTF-8"></script></head>
+<body>
+    <!-- <img src="https://picsum.photos/200/300?random=1" alt="pic1">
+    <img src="https://picsum.photos/200/300?random=2" alt="pic2">
+    <img src="https://picsum.photos/200/300?random=3" alt="pic3"> -->
+
+    <script>
+        /* 
+        Задание.
+        С помощью цилка for добавьте в body 6 картинок, по примеру тех, что закомментированы
+        выше. Картинки вставляйте со помощью insertAdjacentHTML. При генерации разметки
+        пользуйтесь шаблонным литералом. Куда должен вставляться счетчик цилка смотрите
+        ниже:
+        <img src="https://picsum.photos/200/300?random=${счетчик_цикла_здесь}" alt="pic${счетчик_цикла_здесь}">
+        */
+        'use strict';
+        let obj = document.querySelector("body");
+        for(let image = 1;image<4;image++){
+            obj.insertAdjacentHTML("beforeend", '<img src="https://picsum.photos/200/300?random=' + image + '" alt="pic' + image + '">');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=uMIVBlzgTSHw3638nP_7JzFJxeg9rRBZegHBUNPPF9lBApIolE4wHBzqdeLk4-UUix9yII-dL8UEupIW1CjagFBYY6iOxLI41IdQsM-3EVp9LEvE6NAdJiSFOcOLu_G60va5F2o9H2HUmju-10SgjqLsMorb_xhgku_pO8B5dyg8lIxktADkUQDmquaLbtV-FQLOsk62hry1QadXtHnWu2nP3ltTsuT67L0bS1C80Ao2k4j5E95EqSDTnmS0TmyiVsp6fVyB34TzkiIhQwg2PfdAuG0UhkLlKXNf8FRCNka9tiiah7VcxRkNcmxjKp7OEPb3tVueeybhrH6yTPV_-L0qVgsSyvhgZ8Ih3VKFvOL8tzsVcY2o03OBW8uzd7vrSowewFQKExp3QI-qMJbZUVkMWpy10VMaKm7mNPxgRWW9dI6P1qnmytvNPd6UdK9dKkNOTTFP32kqbsYj3dF0TD3t52rtFkVLuk9gcAgoJdjHCB9X-tCHPo9wGz74RpRgvChxUDqkcIqofdyobrhb-JcD3yte5bE4eUFM4NMhHw1on2MUgbz5UZIYS6jROiaVdkPkb5rrZFhqVtx879L3-xhNYO_EIJzPyc7Bcx-dqcOFc51r97857X5ZTSBOCG6QhVin2mQqCXNFWlwVGlElpHYX5yxe3gnxnGn5EgyadWwp0Jr5O0cnOP66TRHKuYUkIku8_TilubgT5FdZNbfAcune-JwSCmA-zst99-KOqmKAuxl9faTYG_wG4mgKrMAb0zE0PlFku4npXRKH7CnMNNozoCdLGfm4uVAre5F3P75xFlFfWO8Sxr_M27zgozscFHqiHBY1S16lGI3TOLHr-3Hz3Sxn9RGWnLsvtd9lfVCHBfgw2JXXHy2VD1PmBZX6uivFTXf6wdBL4rU_36yhIlCZLpKPyLPKVrDNPpVKgVheXqge-CJANyI9irJUfIq_mfxWopfTIDCPRwRvFUQNugaACGnQHeAL4THZQdn-uBjejUm8Ex-AlZlWATyrQAohSu2khAM9nM5DqW0gkaWAMOzIhaRolQrt-MyozBfVF88B6f2cTvvTO8Rq8AkAJddwjdrvmGfDM_591NW4derkcrgRcs2sI3Y799MJhYssn3WdqMeuSgRgN4-srwCX-kFDAqxEObC8ESK1qOzFfn943bpALUgsLpqFotDU61LBhYq_sii4ap5DEt_kE50B6Ygd3i9aPExhfAxY8Mh0RBTvBUL9bWbCyBiNRX3mYW2B3jo0CI-t2dTBJ750xH3eNal0fu-v2cygWtYZSnNKrkj2j4bezGGMkTdEgH_QPY7v1UD4UC-I3jdU9yeWXwfSEiWA5vBiv3bW7Kli8xtzUG_Xa6f85-UkvLkPFigsA7NHjuRg-jUKovXK04CfJTxblV8dyByyA4ny_w24qogifwx6bX49pyizdyo6RtCJyVtQJFODq5_RGvx0xvoTQKTt3-_PKUunmBUNt5ScITZFE34lfJBfHi3oHvmdOFBs2BiFiEX9Xjtz1erczpCdoN21k_Jni529AOuFkeZWfCt_e4dctf2G4fR3gaUOy5TXt0Uct8PJ9wJMPinx6d7xUz820-aARWvYwqWHbfPCZQFfZnhqNQ" charset="UTF-8"></script></head>
+
+<body>
+    <button>Показать сообщение</button>
+    <div class="message">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aliquam enim voluptates quibusdam
+        perferendis sint ipsa, nulla quas doloribus nobis libero voluptatem unde inventore. Ut quas corporis fugit error
+        explicabo? Ipsa quos qui similique sequi officia quod ab reiciendis alias!
+    </div>
+
+    <!-- 
+    Задание. Вам нужно чтобы при клике на кнопку появлялось сообщение .message
+    снизу экрана, в общем как сообщения вконтакте.
+    1. Аудио воспроизводите как здесь https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement
+    2. Чтобы получить высоту .message, используйте свойство clientHeight
+    3. Чтобы анимировать перемещение .message используйте стиль transform
+    как здесь https://webref.ru/css/value/translatey
+    -->
+
+    <script> 
+        let audio = new Audio("notification.mp3");
+        let message = document.querySelector(".message");
+        let button = document.querySelector("button");
+        button.addEventListener("click", function(){
+            let height = message.clientHeight;
+            message.style.transform = `translateY(-${30 + height}px)`;
+            audio.play();
+        })
+    </script>
+</body>
+
+</html>
