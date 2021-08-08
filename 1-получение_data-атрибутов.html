@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VRjHPZTVmgC2ImPVjVs4o-nkzU665bpssQKlEmXNay47kkUjNTCR-ovRC3-ZPyEd9kQvB_oM-IFBDFiQAWhleYiMizUKIZ_Len7mVhDobmEURS26O4B1LQ90zhrVfi0YCyF4zihxHcO0PSLy9qbomEEsZdfcpxeHarBXSlncD19gE1uRdXUD-C8Kbu6Mjd9auNZzsfrVnDg4iGLqi4eBt0DRnShryScgq7Pu6WvOn44J2NSs5FoZIa0o9sOB8ffYO5Xw40bJM1-Lcg3KeIKlMMtwNYUXaOjbuDS5NKT4qjMpYOvdwZxfEN4Pwo_WsZxMtrWL_BZhLYbFbIWdGC8xRy20aOqUtHVGvrvlPq8alXbemOH49OQwQicXUetfzJt8l6NeOITfWHlibxAThDXK-RS_k-SUXHSu04OJPKq5QhTm6GuJiuLOH7_lUI7dPYIJnwIzadXIIYY9e2gTtFooAnYicw4QZFXJrCu2kUwD1_KX5-lE-592SEeJzFyrroxIUOovnzxHi-Td5OIGPmjnWe3JvtdfPLRdfx_sIioRTRgu5qRv2vF8BAzNZSmfL1BddiP-TpNXaG09yWDBRgXmHA3_UUIkElJmwP4XZq_p5arBZP_nmXxpCpLDd3SrLvNXXXboU11SRWFKUobca5_Jq9OiFKOh2TMlOZJ7RZKaBwGBq8fPxf7oZxVWzztISI2ppOjdq8f4shszwXINywAA0UTUF_3LVc9Cp48ZuSx-ulyapoPOjKzzEyunmGBUdQELYawjLlBMjaxZlwFucm-kVTn4ExfjYA2D_KiG41Ev3asgLV1p0kfHEA7nIHGuumvSX4no5JlsEXP0m33Nhzs_K2Ho2uv-rNQLbW4N5tbi2-JRBUDW74b1s3ftqNoJBkqLvkL_6T5GGIuPPsr1vuqdtFmDfgMAPSl-xtd2dhRoGNNRKiaFzSOdrcfxK-3Gxbxzj5X5L5-ypoarO5nTAd7pO2Z3XluLAyROvBSa75K8EwXb_uqF6mvm7FPMa6FxUsLBj_NYBQELTyMbsKUtpHy_Xt969mdIkYWwKP4i7l4VYSjFQPReA8HYtNwe14uWDbmxUMXRk00_x764BSDyZQUgTFulazPWj202RueuoqWEbrMXQfzSV3X0WhKdC3j8KxOInojXg4eM_cWTsGV3EqUmUgG74y3pZ5rc9SCKu37zvJidZx7k-O33qIj855VbOe-AgdXw-a4omF9Cn7Ep_tWv2y8Vhgy0AcC8vnZ57g6JNY3FAGw-F0wVTAZWc6IluLmtrepuxW15xzohynFCYhTJus89FoXeEESuEKHNSqhoL_YasmOMNSqHJMSQdcHblojm9xbUqcG1sVzU9pHIBEp7fo6DsPv-0LANgRU-owl_gPevdv_X14aj2E-VreB4lyrIYiXxkaCRZF0tiodvt4WiS28HR300QGJUdIjkwI8QHv-6DyHmhKl9ACsz1z-yuyjrT5N4jpnh7hjvbc7J3Y1jf7T7gY8D8MWTop0hPHKzuv4qUyoMwX_nMFmR3syFUYjzJ8lrfu5o4qABf9lhIMjdipGwWrlbf8RYLosY2dSIQxA-3w8hXJRJhhkrhbEppBniUwACN_Gxd9-sX_ElTUOsekLTK3gwc1wACfNCGDsTytlfYP4uLF9eM0Xeivl465PwnL76uE3IZD-hjpapDHfQd7QrSmDbXq3yQ8AxnqQbyfv_yzzPts8W1xnhOG9A6Dgg056675UrG3MMY1aYqQCZeH_hrxZj7IUDspUUK70UMrMFuCwzBIZALQNrgDonyXK9F6VwixoHDdpmEK9K82bEgOc8og3GK0vL3BAO2rC-1GI" charset="UTF-8"></script></head>
+<body>
+    <button data-id="1" data-value="btn1">Кнопка 1</button>
+    <button data-id="2" data-value="btn2">Кнопка 2</button>
+    <button data-id="3" data-value="btn3">Кнопка 3</button>
+
+    <!-- 
+    Задание. Нужно при клике на кнопку выводить в консоль значения ее
+    data- атрибутов.
+    1. Получите все кнопки например с помощью querySelectorAll
+    2. Переберите полученную коллекцию, например с помощью forEach
+        2.1 data- атрибуты можете читать например с помощью свойства dataset
+        у каждой кнопки.
+    -->
+
+    <script>
+        'use strict';
+        let buttons = document.querySelectorAll("button");
+        buttons.forEach(function(elem){
+            elem.addEventListener("click", function(){
+                console.log(elem.dataset);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=gKw5DAf3Hg85aZO4xj3o4xpuERiRMW_B4HE2UL-THE7lRdFFIBx9zU6z38c0WDL_fQDGiA1--4onHjcH7oWJjjMzQPUvJWhNItwyOGJ-tYEhBGDjcsyQOSvi8irco4OSoyO7B15uDra-ujLh26oeJyyYTfaUU1XCVEfflJ5AMCjNV2D0PYUmgYdTRDQs0qr4Yv1B2yqTzVvBnsr23TToIx_4dQnqxTgK4gw-lvEeGKymmg9_N347vkr-m4WHwDz8okV0FIAQ4q6LT8zA1ZI22u99_Mi6nHBmjE5xnQ_W5Muw5vAiP6QEy2Ax2YXEqnzXmTMh2Yc74hGcl7SuDKiTC3kuoKbucRlFuT2oyaZPElbos506XU2V683AltIzqATjm43k19AnpgaisgPq9riPm9OPuvl6HuMTm1K8q0XV6pMxnwWJiDCeLftnwmAEOUk3TYTiSBLpiYUPRn4LP52edrqdZLoSL9HXSNdpnUltpunRsHeF-L1oRFzuRXsM-j6zuvB3IDEgODXGDv32n5MuCwRCaKeiiX0Ex9SHVID3yYYf0J14K4MsWVsIIocNCvVJ3eV84U2T3UuuVluI43gin2aVcnFLTTILb3Kx_Yjj5KSh-3OMMml4jAXBZQFLG51IaqyuSwVHelQlIII9zlUx9SOAtwEkU3vw7PieIU7I7woLtP7mjANvoM9aCgCzGBas3vGKszWzZPRFjzx1uPDXjy6QdFhmLl1ux1ktEt1d5JWjTT9MBs90DbwK1JoaE2o11Oaa46ByYZzcb6XWokWUFngKJ_sKhgAi6dJxSZCO-xUuDci-0wYP2vvWLPGs6dhZgg3VseJXncyb6v9dlPRoSSmEdM49zpiRHN_exwxRSePFizh_QixV0r_vtTi8LgeQkLmWG2Kju5Nb4DJ0tF8v2k6HgKFOftTHttKFhGpvzrVl5wl1Mnjm0fvvXcPOdatLj6bauGmb7ShNEMt4f49j327t6ExTwCBsYu__U3DMRQgfYYfJu4lOan19957FD_KBi71R8H5PijCsQ1vQigBP3wrGJYXI4Niu6PGW0Ur0khw9AJMcgAIznJY1bSAesd_PGIS8aHeYXKWQvfVNA_1RgI-ZzsTsaEQuoMOSfhaIln-Vmxs2zYGsl6n-PZkCDVoVVrSt-X7Rm4gkR_Hto5-uvXTTyJakZve0cAAnaGihGdabqaP9S20cqXLdxjjOxO-W1lZc9zf0Vj6DktFDILh8PSEdbJ3jmLJJxrPYI8ctD-NQntgRDqfA2Q2PL8I5n7BFgCvYc8JN9bwCMW1oo6oDYJaMC14xCNcREJTWzPiJpY3zSwJ3loH2y0tsI0n0LYhP4Vstpg6rA92QlgPs9TlkDv5BVk-9iAaRUYPjgQxn3LHAC_qnUwPnbCUsiQk0326J_H3cz2c7x69gdMK4VDFgKS6VkvMm1I5lId0pjOHrbLZKgJ23XoYtzwF0lWlfERcMGryqda0-BgjHRz6ylz6vI4h4lDYskhqkQ6bmTAkb8NBgfU7P0xOjfNkVAoKgn0ptQxMylmO3InUqrkPshgbSe81h-KErsj9SBF7CznT-V9uNvCr9MiN20U2f-VkjCAZb2sRn6sTGVFdJbw8zHxAEpndIvTfINC6U1JCsSWD2PkspySWgozVSS9gglljol3X1JYuAje5k5XhRVKWD8DR_KxMsdH7XfGPYfVZ9t-IQj5pBUHd3voSIeolUh238sMSm" charset="UTF-8"></script></head>
+<body>
+    <input type="range" min="20" max="100">
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, expedita.
+    </div>
+    
+    <!-- 
+    Задание. Нужно чтобы при смещении ползунка в div менялся размер шрифта.
+    1. Получите ссылку на input.
+    2. Получите ссылку на div.
+    3. Input'у поставьте прослушивание события 'input';
+        3.1 У функции-обработчика определите параметр event.
+        3.2 Значение input'а читайте из event.target.value.
+    -->
+    
+
+    <script>
+        'use strict';
+        let input = document.querySelector("input");
+        let div = document.querySelector("div");
+        input.addEventListener("input", function(event){
+            div.style.fontSize = event.target.value + 'px';
+        });
+    </script>
+</body>
+</html>
